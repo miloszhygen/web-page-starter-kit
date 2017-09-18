@@ -4,14 +4,23 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:dist":"rm -r dist; mkdir dist && echo '🏗 => Building dist...'",
+    "minify:js": "uglifyjs public/*.js -o dist/main.js",
+    "minify:css": "cleancss public/*.css -o dist/main.css",
+    "minify:html": "usemin public/index.html -d dist -o dist/index.html --htmlmin true --rmlr true",
+    "build": "npm run build:dist -s && npm run minify:js -s && npm run minify:css -s && npm run minify:html -s",
+    "start:dist":" echo 'Close with Ctrl + c \n🔧 => Starting server...' && cd dist/ && python -m SimpleHTTPServer 8000"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
+    "clean-css-cli": "^4.1.9",
+    "uglify-js": "^3.1.0",
+    "usemin-cli": "^0.5.1",
     "connect": "^3.6.3",
     "livereload": "^0.6.2",
     "serve-static": "^1.12.4"
-  }
+  },
+  "dependencies": {}
 }

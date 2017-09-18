@@ -5,20 +5,18 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My awesome page</title>
-    
     <link rel="stylesheet" href="main.css">
-    
   </head>
   <body>
     
-    <h1>Hello there</h1>
-    <p>From the livereload template thingy!</p>
+    <h1>Hello there!</h1>
+    <p>Change the world! Read the readme!</p>
+
 
     <script src="main.js"></script>
-    <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
-      ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script>
-
-  </body>
+    
+    <!-- build:remove -->
+    <script src="helper/livereload.js"></script>
+    <!-- endbuild -->
+   </body>
 </html>
