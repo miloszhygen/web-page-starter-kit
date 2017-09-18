@@ -1,28 +1,28 @@
 This is a super easy starter kit for creating simple webpages with livereload. 
 
 
-# Prerequisite 
+## Prerequisite 
 You need node and npm installed. 
-[How to install node](https://github.com/creationix/nvm)
+[Installing node](https://github.com/creationix/nvm)
 
 
-# First time
+## First time
 `npm install && npm start`
 
-# Starting the site 
+## Starting the site 
 `npm start`
 
-# Build 
+## Build 
 `npm run build -s`
 
-# Running the build/dist
+## Running the build/dist
 `npm run start:dist -s`
 
-# Deploy
+## Deploy
 Heroku, Firebase etc...?
 
 
-# Dependencies
+## Dependencies
 - [usemin-cli](https://github.com/nelsyeung/usemin-cli)
 - [clean-css-cli](https://github.com/jakubpawlowicz/clean-css-cli)
 - [uglifyjs](https://www.npmjs.com/package/uglifyjs)
@@ -30,7 +30,7 @@ Heroku, Firebase etc...?
 - [livereload](https://github.com/napcs/node-livereload)
 - [serve-static](https://github.com/expressjs/serve-static)
 
-# Creating a new page
+## Creating a new page
 Remember to add the livereload script    
 
 ```
@@ -40,6 +40,5 @@ Remember to add the livereload script
 ```
 
 
-# TODO
+## TODO
 - improve the code further
-- 
