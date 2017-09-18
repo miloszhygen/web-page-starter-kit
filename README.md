@@ -42,3 +42,4 @@ Remember to add the livereload script
 
 ## TODO
 - improve the code further
+- build all html files. At the moment only the index file is built
